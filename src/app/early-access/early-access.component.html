@@ -1,0 +1,25 @@
+<div class="early-access-container">
+  <div class="early-access">
+    <div class="early-access-title">
+      {{ title }}
+    </div>
+    <div class="early-access-context">
+      {{ context }}
+    </div>
+  </div>
+  <div class="email-btn-container">
+    <input
+      type="email"
+      class="input-email"
+      placeholder="{{ placeholder }}"
+      [(ngModel)]="email"
+      [ngStyle]="{ 'border-color': showErr ? 'red' : '' }"
+    />
+    <span *ngIf="showErr" class="err-msg">
+      {{ errMsg }}
+    </span>
+    <button class="free-btn" (click)="onClickSave()">
+      {{ btnTitle }}
+    </button>
+  </div>
+</div>

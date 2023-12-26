@@ -1,0 +1,99 @@
+.footer-container {
+  background-color: hsl(243, 87%, 12%);
+  padding: 10% 5%;
+}
+.logo {
+  filter: brightness(0) invert(1);
+  margin-bottom: 3%;
+}
+.footer-bottom {
+  display: flex;
+  color: white;
+  font-family: "OpenSans";
+  font-size: 18px;
+  padding-right: 15%;
+  justify-content: space-between;
+}
+.footer-contact-container {
+  display: grid;
+  grid-template-columns: max-content max-content;
+  height: max-content;
+  gap: 20px 15px;
+}
+.footer-contact {
+}
+.contact-icon {
+}
+.contact-value {
+}
+.option-container {
+  gap: 20px;
+  display: grid;
+  height: fit-content;
+}
+.option {
+}
+
+.footer-main-social {
+  display: flex;
+  height: fit-content;
+  gap: 10%;
+}
+.social-icon {
+  border: 2px solid white;
+  padding: 8px 12px;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon {
+  color: white; /* Adjust the color of the icon */
+}
+
+@media (min-width: 679px) {
+  .option {
+    cursor: pointer;
+  }
+  .option:hover {
+    color: hsl(238, 22%, 44%);
+  }
+  .social-icon {
+    cursor: pointer;
+  }
+  .social-icon {
+    cursor: pointer;
+  }
+  .social-icon:hover .icon {
+    color: hsl(224, 93%, 58%);
+  }
+  .social-icon:hover {
+    border-color: hsl(224, 93%, 58%);
+  }
+}
+
+@media (max-width: 678px) {
+  .footer-container {
+    padding: 15% 5%;
+  }
+  .footer-bottom {
+    display: grid;
+    gap: 50px;
+    padding: 0;
+    justify-content: normal;
+  }
+  .footer-main-social {
+    gap: 10px;
+    justify-content: center;
+  }
+  .social-icon {
+    width: 20px;
+    height: 25px;
+  }
+  .logo {
+    margin-bottom: 10%;
+  }
+}

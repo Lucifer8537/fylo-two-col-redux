@@ -1,0 +1,114 @@
+.email-container {
+  display: flex;
+  align-items: center;
+  padding: 3% 5% 20% 5%;
+  gap: 40px;
+}
+.email-submit-container {
+}
+.email-title {
+  font-family: "Raleway";
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 1.3em;
+}
+.email-context {
+  font-family: "OpenSans";
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 25px;
+}
+.email-input-container {
+  margin-top: 25px;
+  display: flex;
+  gap: 20px;
+}
+.email-input {
+  outline: unset;
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 50%;
+  font-family: "OpenSans";
+  font-size: 15px;
+  font-weight: 600;
+}
+.email-btn {
+  border: 1px solid transparent;
+  background-color: hsl(224, 93%, 58%);
+  border-radius: 5px;
+  color: white;
+  font-family: "OpenSans";
+  font-size: 15px;
+  font-weight: 600;
+  width: 30%;
+}
+.email-img {
+  width: 48%;
+}
+
+.email-input::placeholder {
+  opacity: 0.7;
+}
+
+.err-msg {
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "OpenSans";
+  color: red;
+  margin-top: 5px;
+  opacity: 0.7;
+}
+
+@media (min-width: 679px) {
+  .email-container {
+    background-image: url("../../assets/bg-curve-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+  }
+  .email-btn {
+    cursor: pointer;
+  }
+  .email-btn:hover {
+    opacity: 0.7;
+  }
+}
+@media (max-width: 678px) {
+  .email-container {
+    display: grid;
+    justify-items: center;
+    padding: 25% 5% 35% 5%;
+    gap: 60px;
+    background-image: url("../../assets/bg-curve-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+  }
+  .email-submit-container {
+    order: 2;
+  }
+  .email-title {
+    text-align: center;
+    font-size: 166%;
+    line-height: 1.5em;
+  }
+  .email-context {
+    text-align: center;
+    font-size: 110%;
+    margin-top: 7%;
+    line-height: 1.3em;
+  }
+  .email-input-container {
+    display: grid;
+    margin-top: 7%;
+  }
+  .email-input {
+    width: 90%;
+  }
+  .email-btn {
+    width: 100%;
+    padding: 4% 5%;
+    font-size: 115%;
+  }
+}

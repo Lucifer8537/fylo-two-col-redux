@@ -1,0 +1,46 @@
+<div class="productive-container">
+  <div class="productive">
+    <div class="productive-title">
+      {{ title }}
+    </div>
+    <div class="productive-context">
+      <p *ngFor="let p of para">
+        {{ p }}
+      </p>
+    </div>
+    <div class="highlight-container">
+      <span class="highlight">{{ highlight }}</span>
+      <img
+        src="../../assets/icon-arrow.svg"
+        alt="icon-arrow"
+        class="highlight-icon"
+      />
+    </div>
+    <div class="comment-container">
+      <img
+        src="../../assets/icon-quotes.svg"
+        alt="icon-quotes"
+        class="icon-quotes"
+      />
+      <div class="comment-context">
+        {{ commentContext }}
+      </div>
+      <div class="profile-container">
+        <img
+          src="../../assets/avatar-testimonial.jpg"
+          alt="profile"
+          class="profile"
+        />
+        <div class="info-container">
+          <div class="name">{{ commentName }}</div>
+          <div class="designation">{{ commentDesignation }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img
+    src="../../assets/illustration-2.svg"
+    alt="illustration-2"
+    class="illustration"
+  />
+</div>

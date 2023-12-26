@@ -1,0 +1,24 @@
+<div class="email-container">
+  <div class="email-submit-container">
+    <div class="email-title">{{ title }}</div>
+    <div class="email-context">{{ context }}</div>
+    <div class="email-input-container">
+      <input
+        type="email"
+        class="email-input"
+        placeholder="{{ intputPlaceHolder }}"
+        [(ngModel)]="email"
+        [ngStyle]="{ 'border-color': showErr ? 'red' : '' }"
+      />
+      <button class="email-btn" (click)="onClickSave()">{{ btnTitle }}</button>
+    </div>
+    <div [ngStyle]="{ opacity: showErr ? '0.7' : '0' }" class="err-msg">
+      {{ errMsg }}
+    </div>
+  </div>
+  <img
+    src="../../assets/illustration-1.svg"
+    alt="illustration-1"
+    class="email-img"
+  />
+</div>

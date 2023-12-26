@@ -1,0 +1,26 @@
+.header-container {
+  padding: 3% 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Raleway";
+  font-size: 16px;
+}
+.menu-container {
+  display: flex;
+  gap: 60px;
+}
+.submenu {
+}
+@media (max-width: 678px) {
+  .header-container {
+    padding: 5%;
+  }
+  .logo {
+    width: 30%;
+  }
+  .menu-container {
+    font-size: 70%;
+    gap: 20px;
+  }
+}

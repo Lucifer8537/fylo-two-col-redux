@@ -1,0 +1,28 @@
+<div class="footer-container">
+  <img src="../../assets/logo.svg" alt="logo" class="logo" />
+  <div class="footer-bottom">
+    <div class="footer-contact-container">
+      <ng-container *ngFor="let c of contactList">
+        <img src="{{ c.icon }}" alt="contact-icon" class="contact-icon" />
+        <span class="contact-value">{{ c.value }}</span>
+      </ng-container>
+    </div>
+    <div class="option-container">
+      <div *ngFor="let o of option1" class="option">{{ o }}</div>
+    </div>
+    <div class="option-container">
+      <div *ngFor="let o of option2" class="option">{{ o }}</div>
+    </div>
+    <div class="footer-main-social">
+      <div class="social-icon">
+        <i class="icon fa-brands fa-facebook-f"></i>
+      </div>
+      <div class="social-icon">
+        <i class="icon fa-brands fa-twitter"></i>
+      </div>
+      <div class="social-icon">
+        <i class="icon fa-brands fa-instagram"></i>
+      </div>
+    </div>
+  </div>
+</div>
